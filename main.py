@@ -47,7 +47,7 @@ class Account:
         return f"Hello {self.name}, your number is {self.number} and your balance is ${self.balance}"
 
 
-account1 = Account(name="Daniel", number="235789329", balance=1000)
+account1 = Account(name="Daniel", number="235789329", balance=4000)
 # Testing
 # print(account1.name)
 # print()
@@ -60,8 +60,8 @@ account1 = Account(name="Daniel", number="235789329", balance=1000)
 # account1.__str__()
 # print()
 # account1.get_balance()
-account2 = Account("Sade", "0893847083", 5000)
-account3 = Account("Gabriel", "0794748546", 5000)
+account2 = Account("Sade", "0893847083", 6000)
+account3 = Account("Gabriel", "0794748546", 8000)
 
 
 # Customer Class: Represents a bank customer who can have multiple accounts.
