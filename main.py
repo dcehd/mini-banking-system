@@ -60,7 +60,7 @@ account1 = Account(name="Daniel", number="235789329", balance=1000)
 # account1.__str__()
 # print()
 # account1.get_balance()
-account2 = Account("Gabriel", "0893847083", 7000)
+account2 = Account("Sade", "0893847083", 5000)
 
 
 # Customer Class: Represents a bank customer who can have multiple accounts.
