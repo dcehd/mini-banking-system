@@ -48,6 +48,7 @@ class Account:
 
 
 account1 = Account(name="Daniel", number=235789329, balance=1000)
+# Testing
 # print(account1.name)
 # print()
 # account1.withdraw(2000)
@@ -75,43 +76,7 @@ class CustomerClass:
     def get_accounts(self):
         print(self.accounts)
         print("-------------")
-        print(f"In an ordered list, your account(s):")
-        for index, account in self.accounts.name:
-            print(f"{index} - {account.name}.")
 
 
 customer1 = CustomerClass(account1)
 customer1.get_accounts()
-
-"""
-Bank Class: Represents a bank that can have multiple customers.
-
-Methods:
-
-add_customer(customer) – Adds a customer to the bank.
-get_customers() – Returns a list of customers in the bank.
-
-Version Updates / Suggested Changes:
-Version 1: Add Account Types and Interest Rates
-
-New Feature: Implement different types of accounts (e.g., Checking, Savings) with their own specific behaviors. Savings accounts could have an interest rate, and Checking accounts may have fees for transactions.
-Updates:
-Modify Account class to inherit from a new AccountType class.
-Implement an interest rate in the SavingsAccount subclass and apply it in the deposit() method.
-Introduce fees for CheckingAccount transactions (deducted on withdraw()).
-Version 2: Transaction History
-
-New Feature: Keep track of all deposits, withdrawals, and account balance changes as a history log.
-Updates:
-Add a Transaction class to represent a transaction with details like type (deposit/withdrawal), amount, and timestamp.
-Add a list of transactions to the Account class, and modify the deposit/withdraw methods to create a new transaction each time.
-Implement a get_transaction_history() method in the Account class to view all transactions.
-Version 3: Account Security with PIN Verification
-
-New Feature: Add security to accounts by implementing a PIN system. The user must input their PIN to perform any transactions.
-Updates:
-Add a pin attribute to the Account class.
-Create a verify_pin() method to check if the entered PIN matches the stored PIN.
-Ensure the deposit() and withdraw() methods ask for PIN verification before proceeding.
-
-"""
