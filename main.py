@@ -11,7 +11,7 @@ Account balance
 
 # Initialize the Account CLass
 class Account:
-    def __init__(self, name: str, number: int, balance: float) -> None:
+    def __init__(self, name: str, number: str, balance: float) -> None:
         self.name = name
         self.number = number
         self.balance = balance
@@ -47,7 +47,7 @@ class Account:
         return f"Hello {self.name}, your number is {self.number} and your balance is ${self.balance}"
 
 
-account1 = Account(name="Daniel", number=235789329, balance=1000)
+account1 = Account(name="Daniel", number="235789329", balance=1000)
 # Testing
 # print(account1.name)
 # print()
@@ -60,6 +60,7 @@ account1 = Account(name="Daniel", number=235789329, balance=1000)
 # account1.__str__()
 # print()
 # account1.get_balance()
+account2 = Account("Gabriel", "0893847083", 7000)
 
 
 # Customer Class: Represents a bank customer who can have multiple accounts.
