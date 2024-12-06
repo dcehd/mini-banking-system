@@ -1,0 +1,28 @@
+Task: Design a Simple Banking System
+You are tasked with creating an object-oriented banking system with the following classes and functionality:
+
+1. Account Class: Represents a bank account with:
+
+Account holder’s name
+Account number
+Account balance
+Methods:
+
+deposit(amount) – Adds the amount to the balance.
+withdraw(amount) – Deducts the amount from the balance (if sufficient funds are available).
+get_balance() – Returns the current balance.
+__str__() – Returns a string representation of the account details.
+
+2. Customer Class: Represents a bank customer who can have multiple accounts.
+
+Methods:
+
+add_account(account) – Adds an account to the customer.
+get_accounts() – Returns a list of accounts owned by the customer.
+
+3. Bank Class: Represents a bank that can have multiple customers.
+
+Methods:
+
+add_customer(customer) – Adds a customer to the bank.
+get_customers() – Returns a list of customers in the bank.
